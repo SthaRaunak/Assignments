@@ -10,3 +10,20 @@ if(allUsers.includes(name)){
 else{
     console.log('name is not found')
 }
+
+//Q2 find number of duplicates
+//expected output is: 2
+//true
+
+const user = 'hari';
+const userArr = ['hari','shyam','hari','thakur'];
+
+let count = 0;
+userArr.map((item)=>{
+    if(item == user)
+    {
+        count++;
+    }
+})
+
+console.log(count);
