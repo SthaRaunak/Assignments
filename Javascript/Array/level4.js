@@ -1,13 +1,13 @@
 //Q1 find if hari is in allUsers array or not/
 //expected output is : 
 //true
-const name= 'hari'
-const allUsers = ['hari','shyam','thakur']
+const name = 'hari'
+const allUsers = ['hari', 'shyam', 'thakur']
 
-if(allUsers.includes(name)){
+if (allUsers.includes(name)) {
     console.log('name is found')
 }
-else{
+else {
     console.log('name is not found')
 }
 
@@ -16,12 +16,11 @@ else{
 //true
 
 const user = 'hari';
-const userArr = ['hari','shyam','hari','thakur'];
+const userArr = ['hari', 'shyam', 'hari', 'thakur'];
 
 let count = 0;
-userArr.map((item)=>{
-    if(item == user)
-    {
+userArr.map((item) => {
+    if (item == user) {
         count++;
     }
 })
