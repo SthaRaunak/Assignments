@@ -68,11 +68,33 @@ const myDetails = [
     { id: 3, name: 'hari' },
     { id: 5, name: 'shyam' },
     { id: 6, name: 'gopal' },
-  ];
-  
+];
+
 //using .map()
-  const myDetailsId = myDetails.map((item, id) => {
+const myDetailsId = myDetails.map((item, id) => {
     return item.id;
-  });
-  console.log(myDetailsId);
-  
+});
+console.log(myDetailsId);
+
+//Q7
+//loop over the arr of objects and calculate total score exp output is:
+// [
+//     {score: 36, name:'hari', marks: [10,3,23]},
+//     {score: 96, name:'shyam', marks: [50,23,23]},
+//     {score: 76, name:'shyam',marks: [20,13,43]},
+// ]
+
+const userDetails = [
+    { score: 0, name: 'hari', marks: [10, 3, 23] },
+    { score: 0, name: 'shyam', marks: [50, 23, 23] },
+    { score: 0, name: 'shyam', marks: [20, 13, 43] },
+];
+
+//answer
+
+userDetails.map((item) => {
+    for (i = 0; i < userDetails.length; i++) {
+        item.score += item.marks[i];
+    }
+});
+console.log(userDetails);
